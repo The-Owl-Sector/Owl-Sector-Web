@@ -10,16 +10,53 @@
 <body>
     <header>
         <div class="header-logo">
-            <a href="./index.html">
+            <a href="#main">
                 <img src="../Logos/Logo The Owl Force_archivos-web/1x/Web-logotipo-monócromo.png" alt="Owl-logo" class="header-logo-image">
             </a>
         </div>
-        <div class="header-links">
-            <a class="header-link" href="">¿Quienes somos?</a>
-            <a class="header-link" href="">¿Por qué nosotros?</a>
+        <nav class="header-links">
+            <a class="header-link" href="#us">Nosotros</a>
+            <a class="header-link" href="">Experiencia</a>
             <a class="header-link" href="">Contáctanos</a>
-        </div>
+        </nav>
     </header>
+    <div class="main" id="main">
+        <img src="../images/Background-main.jpg" alt="first-Background" class="main-image">
+        <h1 class="main-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quae, amet velit est voluptates quibusdam incidunt eveniet maiores <span class="main-title-highlight">ipsum rerum? </span></h1>
+    </div>
+    
+    <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'us')">¿Quiénes Somos?</button>
+        <button class="tablink" onclick="openTab(event, 'services')">Nuestros Servicios</button>
+        <button class="tablink" onclick="openTab(event, 'team')">Nuestro Equipo</button>
+        <button class="tablink" onclick="openTab(event, 'purpose')">Propósito</button>
+        <button class="tablink" onclick="openTab(event, 'future')">Futuro</button>
+    </div>
+
+    <div id="us" class="tabcontent">
+        <h2>¿Quiénes Somos?</h2>
+        <p>The Owl Sector es una innovadora microempresa formada por dos apasionados estudiantes: uno de la Licenciatura en Matemáticas y otro de la Licenciatura en Ingeniería de Software...</p>
+    </div>
+
+    <div id="services" class="tabcontent">
+        <h2>Nuestros Servicios</h2>
+        <p>En The Owl Sector, ofrecemos una gama completa de servicios diseñados para satisfacer las necesidades tecnológicas de pequeñas empresas...</p>
+    </div>
+
+    <div id="team" class="tabcontent">
+        <h2>Nuestro Equipo</h2>
+        <p>Nuestro equipo está compuesto por dos profesionales altamente capacitados en sus respectivos campos...</p>
+    </div>
+
+    <div id="purpose" class="tabcontent">
+        <h2>Propósito</h2>
+        <p>En The Owl Sector, nuestro propósito es claro: proporcionar soluciones tecnológicas de alta calidad a pequeñas empresas...</p>
+    </div>
+
+    <div id="future" class="tabcontent">
+        <h2>Futuro</h2>
+        <p>Miramos hacia el futuro con la visión de expandir nuestros servicios y capacidades, ofreciendo soluciones cada vez más avanzadas en el desarrollo de software y análisis de datos...</p>
+    </div>
 
 
     <script src="./script.js"></script>
