@@ -22,42 +22,59 @@
     </header>
     <div class="main" id="main">
         <img src="../images/Background-main.jpg" alt="first-Background" class="main-image">
-        <h1 class="main-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quae, amet velit est voluptates quibusdam incidunt eveniet maiores <span class="main-title-highlight">ipsum rerum? </span></h1>
+        <h1 class="main-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quae, amet velit est voluptates quibusdam incidunt eveniet maiores <span class="highlight">ipsum rerum? </span></h1>
     </div>
     
-    <div class="tabs">
-        <button class="tablink" onclick="openTab(event, 'us')">¿Quiénes Somos?</button>
-        <button class="tablink" onclick="openTab(event, 'services')">Nuestros Servicios</button>
-        <button class="tablink" onclick="openTab(event, 'team')">Nuestro Equipo</button>
-        <button class="tablink" onclick="openTab(event, 'purpose')">Propósito</button>
-        <button class="tablink" onclick="openTab(event, 'future')">Futuro</button>
-    </div>
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tablink" onclick="openTab(event, 'us')">¿Quiénes Somos?</button>
+            <button class="tablink" onclick="openTab(event, 'services')">¿Que Ofrecemos?</button>
+            <button class="tablink" onclick="openTab(event, 'team')">Nuestro Equipo</button>
+            <button class="tablink" onclick="openTab(event, 'purpose')">Propósito</button>
+            <button class="tablink" onclick="openTab(event, 'future')">Futuro</button>
+        </div>
 
-    <div id="us" class="tabcontent">
-        <h2>¿Quiénes Somos?</h2>
-        <p>The Owl Sector es una innovadora microempresa formada por dos apasionados estudiantes: uno de la Licenciatura en Matemáticas y otro de la Licenciatura en Ingeniería de Software...</p>
-    </div>
+        <div id="us" class="tabcontent">
+            <h2>Conoce a The Owl Sector</h2>
+            <p> <span class="highlight">The Owl Sector</span> es una innovadora microempresa con aproximadamente dos años de experiencia en investigación, programación web, estadística y matemáticas, nos especializamos en ofrecer soluciones tecnológicas que abarcan desde el desarrollo básico de software hasta la implementación de sistemas de manejo de bases de datos.</p>
+        </div>
 
-    <div id="services" class="tabcontent">
-        <h2>Nuestros Servicios</h2>
-        <p>En The Owl Sector, ofrecemos una gama completa de servicios diseñados para satisfacer las necesidades tecnológicas de pequeñas empresas...</p>
-    </div>
+        <div id="services" class="tabcontent">
+            <h2>Nuestros Servicios</h2>
+            <p>En <span class="highlight">The Owl Sector</span>, ofrecemos una gama completa de servicios diseñados para satisfacer las necesidades tecnológicas de pequeñas empresas. Nuestros servicios incluyen:</p>
+            <ul>
+                <li><span class="highlight">Desarrollo Web</span>: Creación y diseño de páginas web personalizadas que capturan la esencia de tu empresa y mejoran tu presencia en línea.</li>
+            </ul>
+            <ul>
+                <li><span class="highlight">Manejo de Bases de Datos</span>: Implementación y gestión de sistemas de bases de datos que aseguran una organización y acceso eficiente a tus datos.</li>
+            </ul>
+            <ul>
+                <li><span class="highlight">Desarrollo de Software</span>: Programación y desarrollo de aplicaciones en lenguajes como Python, Java y C++ para solucionar problemas específicos y mejorar la funcionalidad de tu empresa.</li>
+            </ul>
+            <ul>
+                <li><span class="highlight">Investigación y Análisis de Datos</span>: Realización de investigaciones y análisis estadísticos para ofrecer insights valiosos y ayudar en la toma de decisiones informadas.</li>
+            </ul>
+        </div>
 
-    <div id="team" class="tabcontent">
-        <h2>Nuestro Equipo</h2>
-        <p>Nuestro equipo está compuesto por dos profesionales altamente capacitados en sus respectivos campos...</p>
-    </div>
+        <div id="team" class="tabcontent">
+            <h2>El talento detras de The Owl Sector</h2>
+            <p>Nuestro equipo está compuesto por profesionales altamente capacitados en sus respectivos campos. Con un sólido trasfondo en matemáticas y software, combinan sus habilidades para ofrecer soluciones innovadoras y efectivas. Conoce a los miembros clave:</p>
+            <div class="profile-images">
+                <h3><img src="../images/profiles-images/2.png" alt="Patricio-profile-image" class="profile-image"><br>Patricio Ibarra</h3>
+                <h3><img src="../images/profiles-images/1.png" alt="Diego-profile-image" class="profile-image"><br>Diego Rosales</h3>
+            </div>
+        </div>
 
-    <div id="purpose" class="tabcontent">
-        <h2>Propósito</h2>
-        <p>En The Owl Sector, nuestro propósito es claro: proporcionar soluciones tecnológicas de alta calidad a pequeñas empresas...</p>
-    </div>
+        <div id="purpose" class="tabcontent">
+            <h2>Misión</h2>
+            <p>En <span class="highlight">The Owl Sector</span>, nuestro propósito es claro: proporcionar soluciones tecnológicas de alta calidad a pequeñas empresas, con un enfoque en la investigación y el desarrollo de software. Queremos ser un socio confiable que facilita la digitalización y optimización de procesos empresariales, utilizando nuestra experiencia y habilidades para impulsar el crecimiento y la eficiencia.</p>
+        </div>
 
-    <div id="future" class="tabcontent">
-        <h2>Futuro</h2>
-        <p>Miramos hacia el futuro con la visión de expandir nuestros servicios y capacidades, ofreciendo soluciones cada vez más avanzadas en el desarrollo de software y análisis de datos...</p>
+        <div id="future" class="tabcontent">
+            <h2>Visión</h2>
+            <p>Miramos hacia el futuro con la visión de expandir nuestros servicios y capacidades, ofreciendo soluciones cada vez más avanzadas en el desarrollo de software y análisis de datos. Estamos comprometidos con la innovación continua y la adaptación a las nuevas tecnologías para seguir brindando el mejor soporte a nuestros clientes. Nuestro objetivo es convertirnos en un referente en la industria, conocido por nuestra calidad, confiabilidad y dedicación.</p>
+        </div>
     </div>
-
 
     <script src="./script.js"></script>
 </body>

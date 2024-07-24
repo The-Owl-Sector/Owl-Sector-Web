@@ -90,7 +90,7 @@ header {
     text-align: center;
 }
 
-.main-title-highlight{
+.highlight{
     color: #F5831F;
 }
 
@@ -103,6 +103,18 @@ header {
 }
 
 /* prueba V0.1 */
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    text-align: center;
+}
+
+.tabs {
+    margin-bottom: 30px; /* Incrementamos el espacio inferior */
+}
 
 .tablink {
     background-color: #555;
@@ -110,9 +122,10 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 10px 20px; /* Incrementamos el padding */
+    font-size: 18px; /* Incrementamos el tamaño de la fuente */
     transition: background-color 0.3s ease;
-    margin: 0 5px;
+    margin: 10px 5px;
 }
 
 .tablink:hover {
@@ -121,18 +134,34 @@ header {
 
 .tabcontent {
     display: none;
-    padding: 20px;
+    padding: 10px 20px; /* Incrementamos el padding */
     border-top: none;
+    max-width: 800px; /* Para limitar el ancho del contenido */
+    margin: 0 auto; /* Para centrar horizontalmente */
+    text-align: center; /* Para centrar el texto */
 }
 
 .tabcontent h2 {
     color: #333;
-    font-size: 28px;
+    font-size: 32px; /* Incrementamos el tamaño de la fuente */
     margin-bottom: 20px;
 }
 
-.tabcontent p {
+.tabcontent p ul{
     color: #666;
-    font-size: 18px;
+    font-size: 20px; /* Incrementamos el tamaño de la fuente */
     line-height: 1.6;
+}
+
+.profile-image{
+    max-width: 200px;
+}
+
+.profile-images{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10em;
+    margin-top: 40px;
 }
