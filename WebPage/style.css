@@ -11,7 +11,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 header {
     background-color: #F5831F;
@@ -26,12 +26,12 @@ header {
     z-index: 1000; /* Aseguramos que el header esté por encima de otros elementos */
 }
 
-.header-logo-image{
+.header-logo-image {
     padding: 1em;
     max-width: 150px;  
 }
 
-.header-links{
+.header-links {
     font-size: 32px;
     margin-right: 50px;
 }
@@ -67,7 +67,7 @@ header {
 }
 
 .main {
-    height: 800px;
+    max-height  : 800px;
     overflow: hidden;
     position: relative;
     padding-top: 100px; /* Necesario para que el link funcione */
@@ -80,7 +80,7 @@ header {
     filter: brightness(25%);
 }
 
-.main-title{
+.main-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,30 +90,26 @@ header {
     text-align: center;
 }
 
-.highlight{
+.highlight {
     color: #F5831F;
 }
 
-.us{
-    height: 700px;
-    overflow: hidden;
-    position: relative;
-    padding-top: 100px; /* Altura del header */
-    margin-top: -100px; /* Altura del header */
-}
-
-/* prueba V0.1 */
-.tabs-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    text-align: center;
+.tabs-section {
+    background-color: #231F20; /* Color de fondo para destacar la sección de pestañas */
+    padding: 20px 0; /* Espaciado alrededor de las pestañas */
+    position: static;
+    top: 0; /* Pega la sección de pestañas en la parte superior */
+    z-index: 999; /* Asegura que esté por encima del contenido */
+    padding-top: 100px; /* Necesario para que el link funcione */
+    margin-top: -100px;
 }
 
 .tabs {
-    margin-bottom: 30px; /* Incrementamos el espacio inferior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 60px;
 }
 
 .tablink {
@@ -122,8 +118,8 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 10px 20px; /* Incrementamos el padding */
-    font-size: 18px; /* Incrementamos el tamaño de la fuente */
+    padding: 10px 20px;
+    font-size: 28px;
     transition: background-color 0.3s ease;
     margin: 10px 5px;
 }
@@ -132,36 +128,59 @@ header {
     background-color: #777;
 }
 
+.tabs-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #231F20;
+    padding: 40px;
+    height: 600px;
+}
+
 .tabcontent {
     display: none;
-    padding: 10px 20px; /* Incrementamos el padding */
+    padding: 20px;
     border-top: none;
-    max-width: 800px; /* Para limitar el ancho del contenido */
-    margin: 0 auto; /* Para centrar horizontalmente */
-    text-align: center; /* Para centrar el texto */
+    text-align: center;
 }
 
 .tabcontent h2 {
-    color: #333;
-    font-size: 32px; /* Incrementamos el tamaño de la fuente */
+    color: #ffffff;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
-.tabcontent p ul{
-    color: #666;
-    font-size: 20px; /* Incrementamos el tamaño de la fuente */
+.tabcontent p, .tabcontent ul {
+    color: #ffffff;
+    font-size: 29px;
     line-height: 1.6;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
-.profile-image{
-    max-width: 200px;
+.profile-image {
+    width: 200px;
+    border-radius: 100%;
 }
 
-.profile-images{
+.profile-images {
     display: flex;
     justify-content: center;
-    text-align: center;
+    gap: 5em;
+    margin-top: 20px;
+}
+
+.prueba{
+    display: flex;
+    height: 700px;
+}
+
+.info-section{
+    height: 700px;
+    align-items: center;
+    align-content: center;
     justify-content: center;
-    gap: 10em;
-    margin-top: 40px;
+    padding-top: 100px; /* Necesario para que el link funcione */
+    margin-top: -100px;
+    background-color: #231F20;
 }

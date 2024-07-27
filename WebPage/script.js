@@ -13,11 +13,12 @@ function openTab(evt, tabName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
+    // Mostrar la pestaña actual y añadir clase 'active'
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
-// Set default tab to open
+// Establecer la pestaña predeterminada
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.tablink').click();
 });
