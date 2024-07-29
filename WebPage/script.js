@@ -22,3 +22,28 @@ function openTab(evt, tabName) {
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.tablink').click();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el envío del formulario por defecto
+
+        // Recoger datos del formulario
+        const formData = {
+            name: document.getElementById('name').value,
+            company: document.getElementById('company').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value
+        };
+
+        // Enviar email utilizando EmailJS
+        emailjs.send('service_c7rml3k', 'template_qerk4n3', formData)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                document.getElementById('response-message').textContent = 'Mensaje enviado exitosamente.';
+            }, function(error) {
+                console.log('FAILED...', error);
+                document.getElementById('response-message').textContent = 'Hubo un error al enviar el mensaje. Por favor, inténtelo de nuevo.';
+            });
+    });
+});
