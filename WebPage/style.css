@@ -207,6 +207,8 @@ header {
 .prueba{
     display: flex;
     height: 700px;
+    padding-top: 100px; /* Necesario para que el link funcione */
+    margin-top: -100px;
 }
 
 .info-section{
@@ -224,6 +226,8 @@ header {
     background-color: #231F20;
     color: #ffffff;
     text-align: center;
+    padding-top: 100px; /* Necesario para que el link funcione */
+    margin-top: -100px;
 }
 
 .contact-section h2 {
@@ -274,4 +278,10 @@ header {
 
 textarea{
     resize: none;
+}
+
+footer{
+    max-width: 100%;
+    height: 200px;
+    background-color: #F5831F;
 }
