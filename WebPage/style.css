@@ -75,7 +75,7 @@ header {
 }
 
 .main-image {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     filter: brightness(25%);
 }
@@ -86,7 +86,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    font-size: 36px;
+    font-size: 108px;
     text-align: center;
 }
 
@@ -163,7 +163,7 @@ header {
     text-align: center;
     background-color: #231F20;
     padding: 20px;
-    height: 600px;
+    height: 500px;
 }
 
 .tabcontent {
@@ -272,8 +272,8 @@ footer{
 
 .slider {
     position: relative;
-    width: 100%;
-    height: 700px;
+    max-width: 100%;
+    height: 900px;
     overflow: hidden;
     margin-top: -100px;
     padding-top: 100px;
@@ -282,30 +282,46 @@ footer{
 .slide {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 700px;
     background-size: cover;
     background-position: center;
     transition: opacity 0.5s ease;
     opacity: 0;
+    z-index: 1; /* Asegura que la imagen esté debajo del texto */
 }
 
 .slide.active {
-    opacity: 5;
+    opacity: 1;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Ajusta el color y la opacidad según tu necesidad */
+    z-index: 2; /* Asegura que la capa de opacidad esté encima de la imagen pero debajo del texto */
 }
 
 .slide:nth-child(1) {
-    background-image: url('../images/Web-desing.jpg');
+    background-image: url('../images/Our-services.jpg');
 }
 
 .slide:nth-child(2) {
-    background-image: url('../images/Database.webp');
+    background-image: url('../images/Web-desing.jpg');
 }
 
 .slide:nth-child(3) {
-    background-image: url('../images/Developing.jpg');
+    background-image: url('../images/Database.webp');
 }
 
 .slide:nth-child(4) {
+    background-image: url('../images/Developing.jpg');
+}
+
+.slide:nth-child(5) {
     background-image: url('../images/data-investigation.jpg');
 }
 
@@ -315,14 +331,14 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 24px;
-    background: rgba(0, 0, 0, 0.5);
+    font-size: 52px;
     padding: 10px;
     text-align: center;
+    z-index: 3; /* Asegura que el texto esté encima de la capa de opacidad */
 }
 
 .text h2{
-    font-size: 42px;
+    font-size: 80px;
 }
 
 button.prev, button.next {
