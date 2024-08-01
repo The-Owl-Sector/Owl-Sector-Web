@@ -204,23 +204,6 @@ header {
     margin-top: 20px;
 }
 
-.prueba{
-    display: flex;
-    height: 700px;
-    padding-top: 100px; /* Necesario para que el link funcione */
-    margin-top: -100px;
-}
-
-.info-section{
-    height: 700px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    padding-top: 100px; /* Necesario para que el link funcione */
-    margin-top: -100px;
-    background-color: #231F20;
-}
-
 .contact-section {
     padding: 40px;
     background-color: #231F20;
@@ -233,6 +216,7 @@ header {
 .contact-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .contact-section form {
@@ -284,4 +268,89 @@ footer{
     max-width: 100%;
     height: 200px;
     background-color: #F5831F;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.slide.active {
+    opacity: 5;
+}
+
+.slide:nth-child(1) {
+    background-image: url('../images/Web-desing.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('../images/Database.webp');
+}
+
+.slide:nth-child(3) {
+    background-image: url('../images/Developing.jpg');
+}
+
+.slide:nth-child(4) {
+    background-image: url('../images/data-investigation.jpg');
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+
+.text h2{
+    font-size: 42px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover{
+    background-color:#F5831F;
+    transition: background-color 0.3s ease;
+}
+
+.prueba{
+    height: 200px;
 }

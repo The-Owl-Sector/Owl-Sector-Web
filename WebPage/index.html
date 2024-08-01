@@ -25,7 +25,7 @@
         </div>
         <nav class="header-links">
             <a class="header-link" href="#info">Nosotros</a>
-            <a class="header-link" href="#experience">Experiencia</a>
+            <a class="header-link" href="#services">Lo Que Ofrecemos</a>
             <a class="header-link" href="#contact">Contacto</a>
         </nav>
     </header>
@@ -38,7 +38,6 @@
     <div class="tabs-section" id="info">
         <div class="tabs">
             <button class="tablink" onclick="openTab(event, 'us')">¿Quiénes Somos?</button>
-            <button class="tablink" onclick="openTab(event, 'services')">¿Que Ofrecemos?</button>
             <button class="tablink" onclick="openTab(event, 'team')">Nuestro Equipo</button>
             <button class="tablink" onclick="openTab(event, 'purpose')">Propósito</button>
             <button class="tablink" onclick="openTab(event, 'future')">Futuro</button>
@@ -49,23 +48,6 @@
         <div id="us" class="tabcontent">
             <h2>Conoce a The Owl Sector</h2>
             <p> <span class="highlight">The Owl Sector</span> es una innovadora microempresa con aproximadamente dos años de experiencia en investigación, programación web, estadística y matemáticas, nos especializamos en ofrecer soluciones tecnológicas que abarcan desde el desarrollo básico de software hasta la implementación de sistemas de manejo de bases de datos.</p>
-        </div>
-
-        <div id="services" class="tabcontent">
-            <h2>Nuestros Servicios</h2>
-            <p>En <span class="highlight">The Owl Sector</span>, ofrecemos una gama completa de servicios diseñados para satisfacer las necesidades tecnológicas de pequeñas empresas. Nuestros servicios incluyen:</p>
-            <ul>
-                <li><span class="highlight">Desarrollo Web</span>: Creación y diseño de páginas web personalizadas que capturan la esencia de tu empresa y mejoran tu presencia en línea.</li>
-            </ul>
-            <ul>
-                <li><span class="highlight">Manejo de Bases de Datos</span>: Implementación y gestión de sistemas de bases de datos que aseguran una organización y acceso eficiente a tus datos.</li>
-            </ul>
-            <ul>
-                <li><span class="highlight">Desarrollo de Software</span>: Programación y desarrollo de aplicaciones en lenguajes como Python, Java y C++ para solucionar problemas específicos y mejorar la funcionalidad de tu empresa.</li>
-            </ul>
-            <ul>
-                <li><span class="highlight">Investigación y Análisis de Datos</span>: Realización de investigaciones y análisis estadísticos para ofrecer insights valiosos y ayudar en la toma de decisiones informadas.</li>
-            </ul>
         </div>
 
         <div id="team" class="tabcontent">
@@ -88,7 +70,35 @@
         </div>
     </div>
 
-    <section class="prueba" id="experience">Lorem ipsum dolor sit amet.</section>
+    <div class="slider" id="services">
+        <div class="slide active">
+            <div class="text">
+                <h2><span class="highlight">Nuestros servicios</span></h2>En <span class="highlight">The Owl Sector</span>, ofrecemos una gama completa de servicios diseñados para satisfacer las necesidades tecnológicas de pequeñas empresas.
+            </div>
+        </div>
+        <div class="slide">
+            <div class="text">
+                <h2><span class="highlight">Desarrollo Web</span></h2>Creación y diseño de páginas web personalizadas que capturan la esencia de tu empresa y mejoran tu presencia en línea.
+            </div>
+        </div>
+        <div class="slide">
+            <div class="text">
+                <h2><span class="highlight">Manejo de Bases de Datos</span></h2>Implementación y gestión de sistemas de bases de datos que aseguran una organización y acceso eficiente a tus datos.
+            </div>
+        </div>
+        <div class="slide">
+            <div class="text">
+                <h2><span class="highlight">Desarrollo de Software</span></h2>Programación y desarrollo de aplicaciones en lenguajes como Python, Java y C++ para solucionar problemas específicos y mejorar la funcionalidad de tu empresa.
+            </div>
+        </div>
+        <div class="slide">
+            <div class="text">
+                <h2><span class="highlight">Investigación y Análisis de Datos</span></h2>Realización de investigaciones y análisis estadísticos para ofrecer insights valiosos y ayudar en la toma de decisiones informadas.
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div> 
 
     <div class="contact-section" id="contact">
         <h2>Contáctanos</h2>
