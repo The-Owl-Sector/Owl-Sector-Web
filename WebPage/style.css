@@ -67,17 +67,43 @@ header {
 }
 
 .main {
-    max-height  : 800px;
-    overflow: hidden;
     position: relative;
-    padding-top: 100px; /* Necesario para que el link funcione */
-    margin-top: -100px; 
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../images/Background-main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    margin-top: -100px;
 }
 
-.main-image {
-    max-width: 100%;
-    display: flex;
-    filter: brightness(25%);
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cambia la opacidad según lo necesites */
+    z-index: 1;
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 3em;
+    line-height: 0.8; /* Ajusta este valor según tus necesidades */
+    text-align: left;
+    margin: 0 2em;
+    border-radius: 20px;
+    padding: 1em;
+    width: 100%;
 }
 
 .main-title {
@@ -209,14 +235,14 @@ header {
     background-color: #231F20;
     color: #ffffff;
     text-align: center;
-    padding-top: 100px; /* Necesario para que el link funcione */
-    margin-top: -100px;
+    padding-top: 100px; /* Ajusta según sea necesario */
+    margin-top: -100px; /* Ajusta según sea necesario */
 }
 
 .contact-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 50px; 
 }
 
 .contact-section form {
@@ -273,7 +299,7 @@ footer{
 .slider {
     position: relative;
     max-width: 100%;
-    height: 900px;
+    height: 800px;
     overflow: hidden;
     margin-top: -100px;
     padding-top: 100px;
@@ -351,7 +377,7 @@ button.prev, button.next {
     padding: 10px;
     cursor: pointer;
     font-size: 18px;
-    z-index: 1;
+    z-index: 4;
 }
 
 button.prev {
@@ -365,8 +391,4 @@ button.next {
 button.prev:hover, button.next:hover{
     background-color:#F5831F;
     transition: background-color 0.3s ease;
-}
-
-.prueba{
-    height: 200px;
 }
